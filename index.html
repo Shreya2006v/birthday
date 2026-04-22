@@ -3,17 +3,18 @@
 <head>
    <script>
 (function () {
-  const encoded = "Worstuuu"; // base64 of password
-  const correctPassword = atob(encoded);
+  const correctPassword = "Worstuuu";
 
   const entered = prompt("Enter password:");
 
   if (entered !== correctPassword) {
-    document.body.innerHTML = "<h1>Access Denied</h1>";
+    document.write("<h1>Access Denied</h1>");
+    document.close();
+    throw new Error("Unauthorized");
   }
 })();
 </script>
-</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Voshoe ❤️</title>
